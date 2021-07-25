@@ -1,0 +1,20 @@
+- name: Install Git
+  package:
+    name: git
+    state: present
+  become: true
+
+- name: Clone asdf repository to ~/.asdf
+  git:
+    repo: https://github.com/asdf-vm/asdf.git
+    dest: ~/.asdf
+    version: "{{ asdf_version }}"
+    force: true
+
+- name: Enable asdf for Bash
+  blockinfile:
+    path: ~/.bashrc
+    marker: "# {mark} :: ANSIBLE MANAGED BLOCK :: {{ role_name }}"
+    block: |
+      . ~/.asdf/asdf.sh
+      . ~/.asdf/completions/asdf.bash

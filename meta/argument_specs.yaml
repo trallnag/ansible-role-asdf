@@ -1,0 +1,11 @@
+argument_specs:
+  main:
+    short_description: Main entry point
+    options:
+      asdf_version:
+        default: v0.8.1
+        type: raw
+        required: false
+        description: >-
+          Commit reference. Can be anything ranging from a branch name, git tag,
+          or a commit id.
