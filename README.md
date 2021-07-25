@@ -1,6 +1,6 @@
-[![role](https://img.shields.io/ansible/role/55771)](https://galaxy.ansible.com/trallnag/asdf)
-[![quality](https://img.shields.io/ansible/quality/55771)](https://galaxy.ansible.com/trallnag/asdf)
-[![downloads](https://img.shields.io/ansible/role/d/55771?label=downloads)](https://galaxy.ansible.com/trallnag/asdf)
+[![role](https://img.shields.io/ansible/role/55772)](https://galaxy.ansible.com/trallnag/asdf)
+[![quality](https://img.shields.io/ansible/quality/55772)](https://galaxy.ansible.com/trallnag/asdf)
+[![downloads](https://img.shields.io/ansible/role/d/55772?label=downloads)](https://galaxy.ansible.com/trallnag/asdf)
 
 # Ansible Role `trallnag.asdf`
 
