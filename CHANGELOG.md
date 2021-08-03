@@ -9,7 +9,13 @@ specification.
 
 ## Unreleased
 
-* Nothing.
+### Added
+
+* Install missing dependency `git`.
+
+### Changed
+
+* Updated docs.
 
 ## [1.0.0] 2021-07-26
 

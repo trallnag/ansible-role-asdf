@@ -1,6 +1,8 @@
-- name: Install Git
+- name: Install Git and Curl
   package:
-    name: git
+    name:
+      - git
+      - curl
     state: present
   become: true
 

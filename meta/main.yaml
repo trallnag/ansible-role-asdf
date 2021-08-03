@@ -2,7 +2,7 @@ galaxy_info:
   author: Tim Schwenke
   namespace: trallnag
   role_name: asdf
-  description: Installs asdf with Git and Bash on Linux
+  description: Installs asdf with Git on Linux
   license: Apache-2.0
   company: none
   min_ansible_version: 2.5

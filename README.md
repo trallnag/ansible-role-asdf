@@ -4,7 +4,7 @@
 
 # Ansible Role `trallnag.asdf`
 
-Ansible role that installs asdf with Git and Bash on Linux.
+Ansible role that installs asdf with Git on Linux.
 
 [asdf]: https://github.com/asdf-vm/asdf
 
