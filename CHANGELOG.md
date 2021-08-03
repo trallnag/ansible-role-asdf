@@ -9,6 +9,10 @@ specification.
 
 ## Unreleased
 
+* Nothing.
+
+## [1.1.0] 2021-08-03
+
 ### Added
 
 * Install missing dependency `git`.
@@ -21,7 +25,3 @@ specification.
 ## [1.0.0] 2021-07-26
 
 * Initial release.
-
-## Unreleased
-
-* Nothing.
