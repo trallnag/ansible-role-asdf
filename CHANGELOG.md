@@ -12,6 +12,7 @@ specification.
 ### Added
 
 * Install missing dependency `git`.
+* Added support for ZSH and Fish shells.
 
 ### Changed
 

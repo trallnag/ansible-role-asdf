@@ -13,10 +13,40 @@
     version: "{{ asdf_version }}"
     force: true
 
-- name: Enable asdf for Bash
+- name: Bash > Add init block to .bashrc
+  when: asdf_shell == "bash"
   blockinfile:
     path: ~/.bashrc
     marker: "# {mark} :: ANSIBLE MANAGED BLOCK :: {{ role_name }}"
     block: |
       . ~/.asdf/asdf.sh
       . ~/.asdf/completions/asdf.bash
+
+- name: Fish > Add init block to config.fish
+  when: asdf_shell == "fish"
+  blockinfile:
+    path: ~/.config/fish/config.fish
+    marker: "# {mark} :: ANSIBLE MANAGED BLOCK :: {{ role_name }}"
+    block: |
+      source ~/.asdf/asdf.fish
+
+- name: Fish > Create completions dir
+  when: asdf_shell == "fish"
+  file:
+    path: ~/.config/fish/completions
+    state: directory
+
+- name: Fish > Create symlink to asdf completions
+  when: asdf_shell == "fish"
+  file:
+    src: ~/.asdf/completions/asdf.fish
+    dest: ~/.config/fish/completions/asdf.fish
+    state: link
+
+- name: ZSH > Add init block to ~/.zshrc
+  when: asdf_shell == "zsh"
+  blockinfile:
+    path: ~/.zshrc
+    marker: "# {mark} :: ANSIBLE MANAGED BLOCK :: {{ role_name }}"
+    block: |
+      . $HOME/.asdf/asdf.sh

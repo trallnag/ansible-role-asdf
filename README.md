@@ -20,6 +20,14 @@ asdf_version:
   description: >-
     Commit reference. Can be anything ranging from a branch name, git tag,
     or a commit id.
+
+asdf_shell:
+  default: bash
+  type: str
+  required: false
+  choices: ["bash", "fish", "zsh"]
+  description: >-
+    The shell you want asdf to use with.
 ```
 
 ## Example Playbook
@@ -34,6 +42,7 @@ asdf_version:
     - name: trallnag.asdf
       vars:
         asdf_version: v0.8.1
+        asdf_shell: bash
 ```
 
 ## Special Requirements

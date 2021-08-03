@@ -9,3 +9,11 @@ argument_specs:
         description: >-
           Commit reference. Can be anything ranging from a branch name, git tag,
           or a commit id.
+
+      asdf_shell:
+        default: bash
+        type: str
+        required: false
+        choices: ["bash", "fish", "zsh"]
+        description: >-
+          The shell you want asdf to use with.
