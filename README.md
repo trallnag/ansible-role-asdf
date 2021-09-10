@@ -4,6 +4,14 @@
 
 # Ansible Role `trallnag.asdf`
 
+🚨 **ANNOUNCEMENT** 🚨
+
+**This project has been archived. Why? It's just "too easy" to install asdf and
+the bulk of this role deals with setting up the auto complete for different
+shells, which is highly dependent on personal setups.**
+
+---
+
 Ansible role that installs asdf with Git on Linux.
 
 [asdf]: https://github.com/asdf-vm/asdf
